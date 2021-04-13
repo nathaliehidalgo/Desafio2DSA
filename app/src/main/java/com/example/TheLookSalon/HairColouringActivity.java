@@ -61,7 +61,7 @@ public class HairColouringActivity extends AppCompatActivity {
             FirebaseUser user = AuthUtils.getUser();
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("dates").child(user.getUid());
 
-            DateInfo info = new DateInfo(dateCalendar.getTimeInMillis(), "Female Haircut");
+            DateInfo info = new DateInfo(dateCalendar.getTimeInMillis(), "Hair Colouring");
             DatabaseReference dateReference = databaseReference.push();
             dateReference.setValue(info);
 

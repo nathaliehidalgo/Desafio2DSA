@@ -62,7 +62,7 @@ public class SpaActivity extends AppCompatActivity {
             FirebaseUser user = AuthUtils.getUser();
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("dates").child(user.getUid());
 
-            DateInfo info = new DateInfo(dateCalendar.getTimeInMillis(), "Female Haircut");
+            DateInfo info = new DateInfo(dateCalendar.getTimeInMillis(), "Spa");
             DatabaseReference dateReference = databaseReference.push();
             dateReference.setValue(info);
 
