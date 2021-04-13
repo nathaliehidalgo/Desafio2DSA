@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/femalehaircut_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/haircut"
+            app:layout_constraintBottom_toTopOf="@+id/hairstyle_btn"
+            app:layout_constraintEnd_toStartOf="@+id/malehaircut_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleservice" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/malehaircut_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/mancut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/femalehaircut_btn"
+            app:layout_constraintTop_toTopOf="@+id/femalehaircut_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hairstyle_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/hairstyles"
+            app:layout_constraintBottom_toTopOf="@+id/makeup_btn"
+            app:layout_constraintEnd_toStartOf="@+id/hairdye_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/femalehaircut_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hairdye_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/hairdye"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/hairstyle_btn"
+            app:layout_constraintTop_toTopOf="@+id/hairstyle_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/makeup_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/makeup"
+            app:layout_constraintBottom_toTopOf="@+id/lash_btn"
+            app:layout_constraintEnd_toStartOf="@+id/brows_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hairstyle_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brows_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/eyebrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/makeup_btn"
+            app:layout_constraintTop_toTopOf="@+id/makeup_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lash_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/lashes"
+            app:layout_constraintBottom_toTopOf="@+id/manicure_btn"
+            app:layout_constraintEnd_toStartOf="@+id/spa_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/makeup_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/spa_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/spa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lash_btn"
+            app:layout_constraintTop_toTopOf="@+id/lash_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/manicure_btn"
+            style="@style/ServicesButtonStyle"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/nails"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pedicure_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lash_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pedicure_btn"
+            style="@style/ServicesButtonStyle"
+            android:background="@drawable/clinicpedi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/manicure_btn"
+            app:layout_constraintTop_toBottomOf="@+id/spa_btn" />
+
+        <TextView
+            android:id="@+id/haircutid"
+            style="@style/ServicesTextViewStyle"
+            android:text="Female Haircut"
+            app:layout_constraintEnd_toEndOf="@+id/femalehaircut_btn"
+            app:layout_constraintStart_toStartOf="@+id/femalehaircut_btn"
+            app:layout_constraintTop_toTopOf="@+id/femalehaircut_btn" />
+
+        <TextView
+            android:id="@+id/mancut"
+            style="@style/ServicesTextViewStyle"
+            android:text="Male Haircut"
+            app:layout_constraintEnd_toEndOf="@+id/malehaircut_btn"
+            app:layout_constraintStart_toStartOf="@+id/malehaircut_btn"
+            app:layout_constraintTop_toTopOf="@+id/malehaircut_btn" />
+
+        <TextView
+            android:id="@+id/hairdressing"
+            style="@style/ServicesTextViewStyle"
+            android:text="Hairdressing"
+            app:layout_constraintEnd_toEndOf="@+id/hairstyle_btn"
+            app:layout_constraintStart_toStartOf="@+id/hairstyle_btn"
+            app:layout_constraintTop_toBottomOf="@+id/femalehaircut_btn" />
+
+        <TextView
+            android:id="@+id/haircolor"
+            style="@style/ServicesTextViewStyle"
+            android:text="Hair Colouring"
+            app:layout_constraintEnd_toEndOf="@+id/hairdye_btn"
+            app:layout_constraintStart_toStartOf="@+id/hairdye_btn"
+            app:layout_constraintTop_toBottomOf="@+id/malehaircut_btn" />
+
+        <TextView
+            android:id="@+id/makeup"
+            style="@style/ServicesTextViewStyle"
+            android:text="Makeup"
+            app:layout_constraintEnd_toEndOf="@+id/makeup_btn"
+            app:layout_constraintStart_toStartOf="@+id/makeup_btn"
+            app:layout_constraintTop_toBottomOf="@+id/hairstyle_btn" />
+
+        <TextView
+            android:id="@+id/brow"
+            style="@style/ServicesTextViewStyle"
+            android:text="Microblading"
+            app:layout_constraintEnd_toEndOf="@+id/brows_btn"
+            app:layout_constraintStart_toStartOf="@+id/brows_btn"
+            app:layout_constraintTop_toBottomOf="@+id/hairdye_btn" />
+
+        <TextView
+            android:id="@+id/lashes"
+            style="@style/ServicesTextViewStyle"
+            android:text="Lash Extensions"
+            app:layout_constraintEnd_toEndOf="@+id/lash_btn"
+            app:layout_constraintStart_toStartOf="@+id/lash_btn"
+            app:layout_constraintTop_toBottomOf="@+id/makeup_btn" />
+
+        <TextView
+            android:id="@+id/spa"
+            style="@style/ServicesTextViewStyle"
+            android:text="Spa"
+            app:layout_constraintEnd_toEndOf="@+id/spa_btn"
+            app:layout_constraintStart_toStartOf="@+id/spa_btn"
+            app:layout_constraintTop_toBottomOf="@+id/brows_btn" />
+
+        <TextView
+            android:id="@+id/nails"
+            style="@style/ServicesTextViewStyle"
+            android:text="Manicure"
+            app:layout_constraintEnd_toEndOf="@+id/manicure_btn"
+            app:layout_constraintStart_toStartOf="@+id/manicure_btn"
+            app:layout_constraintTop_toBottomOf="@+id/lash_btn" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/ServicesTextViewStyle"
+            android:text="Pedicure"
+            app:layout_constraintEnd_toEndOf="@+id/pedicure_btn"
+            app:layout_constraintStart_toStartOf="@+id/pedicure_btn"
+            app:layout_constraintTop_toBottomOf="@+id/spa_btn" />
+
+        <TextView
+            android:id="@+id/titleservice"
+            style="@style/AppointmentTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="Choose service"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/femalehaircut_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_btn" />
+
+
+        <LinearLayout
+            android:id="@+id/history_btn"
+            android:layout_width="347dp"
+            android:layout_height="216dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rec_booking"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/titleservice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.482">
+
+            <TextView
+                style="@style/AppointmentTitleTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="My Appointments" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="398dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/bds33" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

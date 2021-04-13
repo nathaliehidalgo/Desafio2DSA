@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.TheLookSalon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="The Look Salon"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheLookSalon">
+        <activity android:name="com.example.TheLookSalon.LoginActivity" />
+        <activity android:name="com.example.TheLookSalon.FemaleHaircutActivity" />
+        <activity android:name="com.example.TheLookSalon.MaleHaircutActivity" />
+        <activity android:name="com.example.TheLookSalon.HairdressingActivity" />
+        <activity android:name="com.example.TheLookSalon.HairColouringActivity" />
+        <activity android:name="com.example.TheLookSalon.MakeupActivity" />
+        <activity android:name="com.example.TheLookSalon.MicrobladingActivity" />
+        <activity android:name="com.example.TheLookSalon.LashExtensionsActivity" />
+        <activity android:name="com.example.TheLookSalon.SpaActivity" />
+        <activity android:name="com.example.TheLookSalon.ManicureActivity" />
+        <activity android:name="com.example.TheLookSalon.PedicureActivity" />
+        <activity android:name="com.example.TheLookSalon.HistoryActivity" />
+        <activity android:name="com.example.TheLookSalon.MainActivity" />
+        <activity android:name="com.example.TheLookSalon.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
