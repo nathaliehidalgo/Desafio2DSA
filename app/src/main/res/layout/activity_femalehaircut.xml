@@ -43,6 +43,9 @@
         app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <EditText
+        android:padding="6dp"
+        android:textColorHint="#222222"
+        android:background="@drawable/edittext_style"
         android:id="@+id/date_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,6 +73,9 @@
         app:layout_constraintVertical_bias="0.107" />
 
     <EditText
+        android:padding="6dp"
+        android:textColorHint="#222222"
+        android:background="@drawable/edittext_style"
         android:id="@+id/time_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
